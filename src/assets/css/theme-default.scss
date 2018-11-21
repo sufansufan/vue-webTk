@@ -1,0 +1,78 @@
+$--color-primary: $eleColor;
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+.base-title {
+  padding-left: 12px;
+  margin-top: 8px;
+  height: 18px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    border-radius: 3px;
+    width: 4px;
+    height: 18px;
+    background: $gloFontColor;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.empty-text {
+  color: #a7a7a7;
+  font-size: 14px;
+  display: inline-flex;
+  align-self: center;
+  justify-self: center;
+}
+
+.el-input__inner {
+  height: 34px !important;
+  line-height: 34px !important;
+}
+
+.el-input__icon {
+  line-height: 35px;
+}
+
+.el-pagination {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0 !important;
+  height: 36px !important;
+  span:not([class*="suffix"]),
+  .el-pagination button {
+    height: 34px !important;
+    line-height: 34px !important;
+  }
+}
+
+.pagination {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.table-list {
+  margin: 0 0 20px;
+  .el-table {
+    .el-table__header-wrapper,
+    .el-table__fixed-right {
+      th {
+        background: #f7f7fa !important;
+        border-bottom-color: #f7f7fa;
+        color: #131313;
+      }
+    }
+    .markdown-body > p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+@import "~element-ui/packages/theme-chalk/src/index.scss";
